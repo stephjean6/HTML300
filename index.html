@@ -8,22 +8,32 @@
     <h1>Number Form</h1>
     <h2>Week 1 Homework</h2>
     <form name="myForm">
-      Enter First Number Here:
-      <input type="number" id="v1" name="firstNumber"><br>
-      Enter Second Number Here:
-      <input type="number" id="v2" name="secondNumber"><br>
-      <input type=button value=Submit>
-      <input type=button value=Reset>
+      <label for="the-number">Enter Number Here:</label>
+      <input type="number" id="the-number" name="the-number" step="any"><br>
+            <!--<input type=button value=Submit>
+      <input type=button value=Reset>-->
+      <button type="button" id="submit">Submit</button>
+      <button type="button" id="reset">Reset</button>
       <br>
     </form>
-      <p id="Count">Count:</p>
-      <p id="Sum" onclick="sum()">Sum:</p>
-      <p id="Average">Average:</p>
+    <table>
+      <tr>
+        <td>Count:</td>
+        <td id="count"></td>
+      </tr>
+      <tr>
+        <td>Sum:</td>
+        <td id="sum"></td>
+      </tr>
+      <tr>
+        <td>Average:</td>
+        <td id="average"></td>
+      </tr>
+    </table>
+       
+    <script type="text/javascript" src="js/jsdave.js"></script>
+    <!--use this for JQuery: 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>-->
 
-    <p>Hi Dave, I failed miserably at this homework.  JavaScript hasn't come as easy to me as HTML/CSS did.</p>
-    <p>I couldn't complete the homework as you assigned (after hours and days of studying), so I decided to try simply summing two input fields; my attempt at that also failed.</p>
-    <p>I really appreciated your comments at the end of class about not getting heartburn over this course.  Much appreciated!  I purchased Jon Duckett's book and made it through the first 100 pages.</p>
-
-    <script type="text/javascript" src="js/jscount.js"></script>
   </body>
 </html>
